@@ -1,0 +1,10 @@
+/*creating the color palette for the website
+**primary, secondary colors for the background, accent for the button**
+*/
+:root{
+    --primary-color:#2584ff;
+    --secondary-color:#00d9ff;
+    --accent-color:#ff3400;
+    --color-headings:#1b0760;
+    --color-body:#918ca4;
+}
