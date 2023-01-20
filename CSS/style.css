@@ -8,3 +8,77 @@
     --color-headings:#1b0760;
     --color-body:#918ca4;
 }
+html{
+    font-size: 62.5%;
+}
+/* Mobile Version*/
+/*Typography*/
+body{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color:var(--color-body);
+    font-size: 2.4rem;
+    line-height: 1.5;/*1.5 times the size of the font*/
+}
+h1,h2,h3{
+    color: var(--color-headings);
+    margin-bottom:2rem;
+}
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    margin-top: 0;
+}
+/*Typography ends here*/
+/*Links*/
+a{
+    text-decoration: none;
+    color:var(--accent-color);
+    
+}
+.link-arrow{
+    text-transform: uppercase;
+    padding-right:2px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.link-arrow::after{
+    content: "-->";
+    margin-left:5px;/* this should not be relative & should be constant anywhere*/
+    transition:margin-left 0.15s;
+}
+/*pseudo state should be followed by condition*/
+.link-arrow:hover::after
+{
+    margin-left:10px;
+}
+/* laptop version- wider screen*/
+@media screen and (min-width:1024px){
+    .link-arrow{
+        font-size: 1.5rem;
+    }
+    
+}
+/*Link style ends here*/
+/*Laptop Version for typography*/
+@media screen and (min-width:1024px) {
+    h1{
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2.4rem;
+    }
+    body{
+        font-size: 1.8rem;
+    }
+    
+}
