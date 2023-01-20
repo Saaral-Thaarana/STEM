@@ -66,6 +66,40 @@ a{
     
 }
 /*Link style ends here*/
+
+/*badge style starts here*/
+/*Object oriented concept of separate style for structure*/
+.badge{
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight:600;
+    padding:0.5rem 2rem;/*vertical and horizontal padding*/
+    white-space: nowrap;/*content should not be wrapped*/
+
+}
+/*Object oriented concept of separate style for skin*/
+/*BEM naming convention*/
+.badge--primary{
+    background-color: var(--primary-color);
+    color:#fff;
+}
+.badge--secondary{
+    background-color: var(--secondary-color);
+    color:#fff;
+}
+.badge--small{
+    font-size: 1.6rem;
+}
+/*Laptop version for Typography*/
+@media screen and (min-width:1024px){
+    .badge{
+        font-size:1.5rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+    }
+}
+/*badge style ends here*/
 /*Laptop Version for typography*/
 @media screen and (min-width:1024px) {
     h1{
