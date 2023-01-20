@@ -1,6 +1,6 @@
-/*creating the color palette for the website
-**primary, secondary colors for the background, accent for the button**
-*/
+/***************creating the color palette for the website**************/
+/**primary, secondary colors for the background, accent for the button**/
+
 :root{
     --primary-color:#2584ff;
     --secondary-color:#00d9ff;
@@ -11,8 +11,10 @@
 html{
     font-size: 62.5%;
 }
-/* Mobile Version*/
-/*Typography*/
+/*************** Mobile Version***********/
+/*****************************************/
+/***************Typography****************/
+/*****************************************/
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     color:var(--color-body);
@@ -35,8 +37,11 @@ h3{
 p{
     margin-top: 0;
 }
-/*Typography ends here*/
-/*Links*/
+/***********Typography ends here**********/
+
+/*****************************************/
+/******************Links******************/
+/*****************************************/
 a{
     text-decoration: none;
     color:var(--accent-color);
@@ -65,9 +70,14 @@ a{
     }
     
 }
-/*Link style ends here*/
+/*****************************************/
+/***********Link style ends here**********/
+/*****************************************/
 
-/*badge style starts here*/
+/*****************************************/
+/**********badge style starts here********/
+/*****************************************/
+
 /*Object oriented concept of separate style for structure*/
 .badge{
     border-radius: 25px;
@@ -78,7 +88,7 @@ a{
 
 }
 /*Object oriented concept of separate style for skin*/
-/*BEM naming convention*/
+/*BEM naming convention (Element--Modifier)*/
 .badge--primary{
     background-color: var(--primary-color);
     color:#fff;
@@ -90,7 +100,7 @@ a{
 .badge--small{
     font-size: 1.6rem;
 }
-/*Laptop version for Typography*/
+/*Laptop version for badge*/
 @media screen and (min-width:1024px){
     .badge{
         font-size:1.5rem;
@@ -99,8 +109,46 @@ a{
         font-size: 1.2rem;
     }
 }
-/*badge style ends here*/
-/*Laptop Version for typography*/
+/*********badge style ends here*********/
+
+/*****************************************/
+/******** List Style Begins Here *********/
+/*****************************************/
+
+
+.list{
+    list-style: none;
+    color: var(--color-headings);
+    padding-left:0; /*to remove the default padding of the browser*/
+}
+/**************in-Line Style**************/
+/****Horizontal****/
+
+.list--inline .list__item {/**element--modifier block__element---BEM***/
+    display:inline-block;/*margin wont be applied if it is just inline*/
+    padding-right:2rem;
+}
+/****Vertical****/
+
+.list--tick{
+    list-style-image: url(../image/tick.svg);
+    padding-left: 2rem;
+}
+.list--tick .list__item{/**nested**/
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width=1024px){
+    .list--tick .list__item{
+        padding-left: 0rem;
+    }
+}
+/************* End of List Style *********/
+
+/*****************************************/
+/*****Laptop Version for typography*******/
+/*****************************************/
 @media screen and (min-width:1024px) {
     h1{
         font-size: 8rem;
@@ -116,3 +164,4 @@ a{
     }
     
 }
+/*********End of Laptop Version for typography*****/
