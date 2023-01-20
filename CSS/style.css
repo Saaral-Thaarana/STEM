@@ -147,6 +147,28 @@ a{
 /************* End of List Style *********/
 
 /*****************************************/
+/******** ICON Style Begins Here *********/
+/*****************************************/
+.icon{
+    width:40px;
+    height:40px;
+   
+}
+.icon--primary{
+    fill: var(--primary-color); /*since this was not working, added <path fill="#63c3ef"></path> in svg file for each component*/
+}
+.icon-container{
+    height: 64px;
+    width:64px;
+    border-radius: 100%;
+    background-color: #f3f9f6;
+    display: inline-flex;/* flex to align the circle in the background for the icon*/
+    justify-content: center;
+    align-items: center;
+}
+/************* End of Icon Style *********/
+
+/*****************************************/
 /*****Laptop Version for typography*******/
 /*****************************************/
 @media screen and (min-width:1024px) {
