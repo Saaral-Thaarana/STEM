@@ -8,6 +8,9 @@
     --color-headings:#1b0760;
     --color-body:#918ca4;
 }
+*,*::after,*::before{
+    box-sizing: border-box;/*implemented mainly for buttons component*/
+}
 html{
     font-size: 62.5%;
 }
@@ -167,6 +170,64 @@ a{
     align-items: center;
 }
 /************* End of Icon Style *********/
+
+/*****************************************/
+/******** ICON Style Begins Here *********/
+/*****************************************/
+.btn{
+    font-size: 1.8rem;
+    font-weight:600;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border:0;
+    text-align:center;
+    border-radius: 40px;
+    cursor: pointer;/* to add cursor to button, usually happens only with link*/
+    white-space: nowrap;
+    margin: 2rem 0;/* to separate the block element*/
+}
+.btn--primary{
+    background-color: var(--primary-color);
+    color:#fff;
+}
+.btn--primary:hover{
+    background-color: #3a8ffd;
+}
+/*since structure & skin should be separated, font color s repeated for each skin*/
+.btn--secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.btn--secondary:hover{
+    background-color: #00c8eb;
+}
+.btn--accent{
+    background-color: var(--accent-color);
+    color: #fff;
+}
+.btn--accent:hover{
+    background-color: #ec3000;
+}
+.btn--block{
+    width:100%;
+    display: inline-block;
+}
+.btn--outline{
+    border: 2px solid var(--color-headings);
+    color: var(--color-headings);
+    background-color: #fff;
+}
+.btn--outline:hover{
+    color:#fff;
+    background-color: var(--color-headings);
+}
+
+@media screen and (min-width:1024px){
+    .btn{
+        font-size:1.5rem;
+    }
+}
+/************* End of Button Style *********/
 
 /*****************************************/
 /*****Laptop Version for typography*******/
