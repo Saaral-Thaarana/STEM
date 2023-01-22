@@ -7,6 +7,8 @@
     --accent-color:#ff3400;
     --color-headings:#1b0760;
     --color-body:#918ca4;
+    --color-border:#ccc;    /* implemented for input field*/
+    --border-radius:30px; /*implemented for input field*/
 }
 *,*::after,*::before{
     box-sizing: border-box;/*implemented mainly for buttons component*/
@@ -256,8 +258,8 @@ a{
     font-size:2rem;
     color:var(--color-headings);
     padding:1.5rem 3.5rem;
-    border: 1px solid #ccc;
-    border-radius: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
     outline:0;
 }
 ::placeholder{
@@ -271,3 +273,21 @@ a{
     }
 }
 /******** Input Style Ends Here *********/
+/******************************************************/
+/******** Input Style with button Begins Here *********/
+/******************************************************/
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+
+}
+.input-group .input{/*nested to remove the two borders one of div & one of input*/
+    flex-grow: 1;/* to increase the size of input box to stretch the entire div*/
+    border:0;
+    padding:1.5rem 1rem;/*vertical & horizontal*/ 
+}
+.input-group .btn{
+    margin:1px;
+}
+/******** Input Style with button Ends Here *********/
