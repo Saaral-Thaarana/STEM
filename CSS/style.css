@@ -291,3 +291,25 @@ a{
     margin:1px;
 }
 /******** Input Style with button Ends Here *********/
+
+/******************************************************/
+/******** Card Style with button Begins Here *********/
+/******************************************************/
+.card{
+    border-radius:7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;/*0 for horizontal & vertical offset, 20px blur-softness, 10px for size of shadow, bigger the size, bigger the shadow will be*/
+    overflow:hidden;/*to bring back the border radius for header*/
+}
+.card__header, .card__body{
+    padding: 2rem 3rem;/*vertical & horizontal*/
+}
+.card--primary, .card__header{
+background-color: var(--primary-color);
+color:#fff;
+}
+.card--secondary, .card__header{
+    background-color: var(--secondary-color);
+    color:#fff;
+}
+
+/******** Card Style with button Ends Here *********/
