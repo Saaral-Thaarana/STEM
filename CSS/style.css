@@ -303,11 +303,11 @@ a{
 .card__header, .card__body{
     padding: 2rem 3rem;/*vertical & horizontal*/
 }
-.card--primary, .card__header{
+.card--primary .card__header{
 background-color: var(--primary-color);
 color:#fff;
 }
-.card--secondary, .card__header{
+.card--secondary .card__header{
     background-color: var(--secondary-color);
     color:#fff;
 }
