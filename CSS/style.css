@@ -385,3 +385,23 @@ letter-spacing: 1px;
     right:5%;
 }
 /******** Plan Style with card, badge, list and buttons Ends Here *********/
+
+/********************************************/
+/******** Media section Begins Here *********/
+/********************************************/
+.media{
+display: flex;
+
+}
+.media__title{
+    margin-top:0;
+    padding-left:1rem;
+    display: inline-block;
+}
+.media__body{
+    margin: 0 2rem;
+}
+.media__image{
+    margin-top:1rem;
+}
+/******** Media section Begins Here *********/
