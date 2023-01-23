@@ -207,6 +207,7 @@ a{
     cursor: pointer;/* to add cursor to button, usually happens only with link*/
     white-space: nowrap;
     margin: 2rem 0;/* to separate the block element*/
+    
 }
 .btn--primary{
     background-color: var(--primary-color);
@@ -293,7 +294,7 @@ a{
 /******** Input Style with button Ends Here *********/
 
 /******************************************************/
-/******** Card Style with button Begins Here *********/
+/**************** Card Style Begins Here **************/
 /******************************************************/
 .card{
     border-radius:7px;
@@ -312,4 +313,62 @@ color:#fff;
     color:#fff;
 }
 
-/******** Card Style with button Ends Here *********/
+/******** Card Style Ends Here *********/
+
+/****************************************************************************/
+/******** Plan Style with card, badge, list and buttons Begins Here *********/
+/****************************************************************************/
+
+.plane__name{
+    font-size: 500;
+    font-weight: 2.4rem;
+    /*color:#fff; with weightage 10 it did not work so increased the weightage to 20 by nesting it*/
+}
+.plan .plan__name{
+    color:#fff;
+}
+
+.plan__price{
+    font-size: 6rem;
+}
+.plan__billing-cycle{
+    font-size:2.4rem;
+    font-weight: 300;
+    opacity:0.8;
+    margin-right: 2rem;
+}
+.plan .badge.badge--secondary{
+    background-color:#02cdf1;
+}
+.plan__description{
+display:block;
+font-size:2rem;
+font-weight: 300;
+letter-spacing: 1px;
+}
+.card__body .list__item{
+margin-bottom: 2rem;
+letter-spacing: 1px;
+}
+.container__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****************/
+/*laptop Version*/
+/****************/
+@media screen and (min-width:1024px)
+{
+    .plan__name{
+        font-size:1.4rem;
+    }
+    .plan__price{
+        font-size: 5rem;
+    }
+    .plan__billing-cycle{
+        font-size: 1.6rem;
+    }
+}
+/******** Plan Style with card, badge, list and buttons Ends Here *********/
