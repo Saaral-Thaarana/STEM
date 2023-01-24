@@ -456,3 +456,23 @@ display: flex;
     }
 }
 /******** Quote section Ends Here *********/
+
+/********************************************/
+/******** Grid section Begins Here *********/
+/********************************************/
+.grid{
+    display: grid;
+}
+/******Tablet 2 columns********/
+@media screen and (min-width:768px){
+.grid--1X2{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+/*********Laptop 3 columns*********/
+@media screen and (min-width:1024px){
+    .grid--1X3{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/******** Grid section Ends Here *********/
