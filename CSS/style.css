@@ -195,7 +195,7 @@ a{
 /************* End of Icon Style *********/
 
 /*****************************************/
-/******** ICON Style Begins Here *********/
+/******** Button Style Begins Here *********/
 /*****************************************/
 .btn{
     font-size: 1.8rem;
@@ -476,3 +476,33 @@ display: flex;
     }
 }
 /******** Grid section Ends Here *********/
+
+/**************************************************/
+/******** Testimonial section Begins Here *********/
+/**************************************************/
+
+.testimonial{
+    padding:3rem;
+}
+.testimonial__image > img{/* direct selector*/
+    width:100%;
+}
+.testimonial__image{
+    position:relative;
+}
+.testimonial__image .icon-container{
+    background-color: var(--accent-color);
+    position:absolute;
+    top:3rem;
+    right:-32px;/* original container is 64px/2*/
+    height:50px;
+    width:50px;
+}
+
+.testimonial__image .icon-container .icon{
+    height:20px;
+    width:20px;
+}
+
+
+/******** Testimonial section Ends Here *********/
