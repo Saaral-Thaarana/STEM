@@ -245,6 +245,10 @@ a{
     color:#fff;
     background-color: var(--color-headings);
 }
+.btn--stretched{/* Implemented for callout component*/
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 
 @media screen and (min-width:1024px){
     .btn{
@@ -506,3 +510,46 @@ display: flex;
 
 
 /******** Testimonial section Ends Here *********/
+
+/**************************************************/
+/******** Callouts section Begins Here *********/
+/**************************************************/
+.callout{
+    
+    padding-left:4rem;
+    border-radius: 5px;
+    
+}
+.callout--primary{
+    background-color: var(--primary-color);
+    color:#fff;
+   
+}
+.callout__header{
+    
+    color:#fff;
+    font-size: 3rem;
+}
+.callout .grid .btn{
+    
+    justify-self: center;
+    align-self: center;
+
+}
+.callout__content{
+    text-align: center;
+}
+@media screen and (min-width:768px)
+{
+    .callout .grid--1X2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        align-self:start;
+    }
+}
+/******** Callouts section Ends Here *********/
