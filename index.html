@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="CSS/normalize.css">
 </head>
 <body>
-<section class="block container">
-    <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ex? Sit quos numquam consequuntur distinctio, voluptate alias ad esse consectetur porro. Consequuntur odio, sunt, odit dignissimos nesciunt perferendis quae expedita nisi quibusdam, magnam quia omnis? Harum in doloribus veniam excepturi necessitatibus. Vel enim laborum excepturi reprehenderit quia praesentium qui! Quidem.</p>
-    </header>
-</section>
-<section class="block block--dark block--dark--left-skewed">
-    <div class="container">
-        <h2 class="block__heading">Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ex? Sit quos numquam consequuntur distinctio, voluptate alias ad esse consectetur porro. Consequuntur odio, sunt, odit dignissimos nesciunt perferendis quae expedita nisi quibusdam, magnam quia omnis? Harum in doloribus veniam excepturi necessitatibus. Vel enim laborum excepturi reprehenderit quia praesentium qui! Quidem.</p>
-    </div>
-</section>
+    <nav class="nav collapsible">
+        <a href="/"><img src="image/logo.png" alt="Logo of the company"></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="image/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <a href="#"><li class="list__item">Subscription Lines</li></a>
+            <a href="#"><li class="list__item">Store</li></a>
+            <a href="#"><li class="list__item">Gifting</li></a>
+            <a href="#"><li class="list__item">School & Groups</li></a>
+        </ul>
+    </nav>
     <script src="js/main.js"></script>
 </body>
 </html>
