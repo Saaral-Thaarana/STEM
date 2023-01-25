@@ -183,6 +183,9 @@ a{
 .icon--primary{
     fill: var(--primary-color); /*since this was not working, added <path fill="#63c3ef"></path> in svg file for each component*/
 }
+.icon--white{/*implemented for collapsible component*/
+    fill: #fff;
+}
 .icon-container{
     height: 64px;
     width:64px;
@@ -553,3 +556,37 @@ display: flex;
     }
 }
 /******** Callouts section Ends Here *********/
+
+/**************************************************/
+/******** Collapsible section Begins Here *********/
+/**************************************************/
+
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;/* pushes towards the end with space in-between*/
+
+}
+.collapsible__heading{
+    margin-top: 0;
+    font-size:3rem;
+}
+
+.collapsible--chevron{
+    transform: rotate(-90deg);
+    
+}
+.collapsible__content{
+    max-height: 0;/* hidding the content area*/
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.collapsible--expanded .collapsible--chevron {
+    transform:rotate(0);
+    transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;/*allocating the total viewport not to be set with height property*/
+    opacity: 1;
+}
+/******** Collapsible section Ends Here *********/
