@@ -30,6 +30,7 @@ body{
 h1,h2,h3{
     color: var(--color-headings);
     margin-bottom:2rem;
+    line-height: 1.2;/*added for Hero component*/
 }
 h1{
     font-size: 7rem;
@@ -683,3 +684,35 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
     }
 }
 /********* Navigation section Ends Here *********/
+
+/**************************************************/
+/********* Hero/Banner section Begins Here ********/
+/**************************************************/
+
+.hero__tagline{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    letter-spacing: 2px;
+    font-size:2rem;
+    color:#b9c3cf;
+}
+
+.hero__image{
+    width:100%;
+}
+.hero{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);/*modified value 80% to 90% to the block--dark--left-skewed*/
+
+}
+/*****Tablet & Laptop******/
+@media screen and (min-width:768px)
+{
+    .hero__content{
+        text-align: left;
+        align-self: center;/*align self to vertically align for GRID elements*/
+    }
+    .hero{
+        padding-top: 0;
+    }
+}
+/********* Hero/Banner section Ends Here ********/
