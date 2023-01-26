@@ -295,7 +295,7 @@ a{
 .input-group .input{/*nested to remove the two borders one of div & one of input*/
     flex-grow: 1;/* to increase the size of input box to stretch the entire div*/
     border:0;
-    padding:1.5rem 1rem;/*vertical & horizontal*/ 
+    padding:1.5rem 2rem;/*vertical & horizontal*/ 
 }
 .input-group .btn{
     margin:1px;
@@ -716,3 +716,35 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
     }
 }
 /********* Hero/Banner section Ends Here ********/
+
+/**************************************************/
+/********* Domain section Begins Here *************/
+/**************************************************/
+.icon__search{
+    height:2.5rem;
+    width:2.5rem;
+    padding-right:1rem;
+    vertical-align: middle;
+}
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border:0;
+    margin:4rem auto;/*4rem vertical auto horizontal, allocates in the available space(670px)*/
+    max-width:670px;
+}
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);/*6rem helps in the spacing & height of each container*/
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin:0 auto;/*auto for horizontal will take available space in 700px*/
+}
+@media screen and (min-width:768px){
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));/*same as repeat(3,1fr) but this for dynamic instance to accomodate in future*/
+    }
+}
+/********* Domain section Ends Here *************/
