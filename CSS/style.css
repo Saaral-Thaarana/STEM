@@ -221,6 +221,14 @@ a{
 .btn--primary:hover{
     background-color: #3a8ffd;
 }
+
+.btn--primary{
+    background-color: var(--color-headings);
+    color:#fff;
+}
+.btn--primary:hover{
+    background-color: #3a8ffd;
+}
 /*since structure & skin should be separated, font color s repeated for each skin*/
 .btn--secondary{
     background-color: var(--secondary-color);
@@ -364,7 +372,17 @@ letter-spacing: 1px;
     justify-content: center;
     align-items: center;
 }
-
+.plan--popular .card__header{
+    position: relative;
+}
+.plan--popular .card__header::before{
+    content:url("../image/popular.svg");
+    width:40px;
+    display:inline-block;
+    position: absolute;
+    top:-6px;
+    right:5%;
+}
 /*****************/
 /*laptop Version*/
 /****************/
@@ -380,19 +398,7 @@ letter-spacing: 1px;
         font-size: 1.6rem;
     }
 }
-.plan--popular .card__header{
-    position: relative;
-    
-    
-}
-.plan--popular .card__header::before{
-    content: url(../image/popular.svg);
-    width:40px;
-    display:inline-block;
-    position: absolute;
-    top:-6px;
-    right:5%;
-}
+
 /******** Plan Style with card, badge, list and buttons Ends Here *********/
 
 /********************************************/
@@ -748,3 +754,36 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
     }
 }
 /********* Domain section Ends Here *************/
+/******************************************************/
+/********* plan block section Begins Here *************/
+/******************************************************/
+.plan .badge--primary
+{
+    background-color:#126de4;
+}
+.block-plan .grid{
+    gap:8rem 5rem;
+}
+.block-plan .card{
+    max-width:500px;
+}
+.plan{
+    transition:transform 0.3s;
+}
+.plan--popular{
+    transform:scale(1.1);
+}
+
+.plan:hover{
+    transform:scale(1.1) ;
+}
+.plan--popular:hover{
+    transform:scale(1.2) ;
+}
+@media screen and (min-width:768px){
+    .grid1X3{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+/********* plan block section Ends Here *************/
