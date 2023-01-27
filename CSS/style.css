@@ -787,3 +787,26 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
     
 }
 /********* plan block section Ends Here *************/
+
+/******************************************************/
+/********* feature section Begins Here ****************/
+/******************************************************/
+.feature{
+    margin: 12rem 0;
+    gap:4rem 4rem;
+}
+.feature__heading{
+    margin:1rem 0;
+}
+.feature__image{
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+.feature:nth-of-type(even) .feature__content{
+    order:2;
+}
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+}
+/********* feature section Ends Here ****************/
