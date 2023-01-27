@@ -14,6 +14,10 @@
 *,*::after,*::before{
     box-sizing: border-box;/*implemented mainly for buttons component*/
 }
+::selection{
+    background-color: var(--primary-color);
+    color:#fff;
+}
 html{
     font-size: 62.5%;
 }
@@ -40,6 +44,7 @@ h2{
 }
 h3{
     font-size: 3rem;
+    font-weight:300;
 }
 p{
     margin-top: 0;
@@ -145,7 +150,7 @@ a{
 
 .list{
     list-style: none;
-    color: var(--color-headings);
+    /*color: var(--color-headings);-- commented for implementing in show-case component & shifted it to to .list--tick"*/
     padding-left:0; /*to remove the default padding of the browser*/
 }
 /**************in-Line Style**************/
@@ -160,6 +165,7 @@ a{
 .list--tick{
     list-style-image: url(../image/tick.svg);
     padding-left: 2rem;
+    color: var(--color-headings);
 }
 .list--tick .list__item{/**nested**/
     padding-left: 0.5rem;
@@ -406,6 +412,7 @@ letter-spacing: 1px;
 /********************************************/
 .media{
 display: flex;
+margin-bottom: 2rem;/* Added for show-case component*/
 
 }
 .media__title{
@@ -614,11 +621,11 @@ display: flex;
     color:#7b858b;
 }
 .block--dark--right-skewed{
-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);/* generated with clip path CSS generator, custom polygon*/
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);/* generated with clip path CSS generator, custom polygon*/
 padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dynamically add to the variable*/
 }
 .block--dark--left-skewed{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     padding-bottom: calc(var(--vertical-padding) + 4rem);
     }
 .block--dark .block__heading{
@@ -706,10 +713,10 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 .hero__image{
     width:100%;
 }
-.hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);/*modified value 80% to 90% to the block--dark--left-skewed*/
+/*.hero{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);/*modified value 80% to 90% to the block--dark--left-skewed
 
-}
+}commented for show-case component*/
 /*****Tablet & Laptop******/
 @media screen and (min-width:768px)
 {
@@ -793,7 +800,7 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 /******************************************************/
 .feature{
     margin: 12rem 0;
-    gap:4rem 4rem;
+    gap:4rem 4nthrem;
 }
 .feature__heading{
     margin:1rem 0;
@@ -810,3 +817,31 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 }
 }
 /********* feature section Ends Here ****************/
+
+/*************************************************************/
+/********* Showcase block section Begins Here ****************/
+/*************************************************************/
+.show-case__image{
+    width: 100%;
+}
+.show-case__title{
+    color: #fff;
+}
+@media screen and (min-width:768px) {
+    .block__show-case .grid{
+        grid-template-columns: 50% 50%;
+        
+    }
+    
+    .show-case__image{
+        width: auto;
+        max-width:700px;
+        
+    }
+   
+    .show-case__picture{
+        justify-self: end;
+    }
+
+}
+/********* Showcase block section Ends Here ****************/
