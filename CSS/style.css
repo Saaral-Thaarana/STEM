@@ -633,6 +633,7 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 }
 .block__header{
     text-align: center;
+    
 }
 .container{
     max-width: 1140px;
