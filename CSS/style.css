@@ -172,7 +172,7 @@ a{
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width=1024px){
+@media screen and (min-width:1024px){
     .list--tick .list__item{
         padding-left: 0rem;
     }
@@ -304,15 +304,17 @@ a{
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     display: flex;
-
+    
 }
 .input-group .input{/*nested to remove the two borders one of div & one of input*/
     flex-grow: 1;/* to increase the size of input box to stretch the entire div*/
     border:0;
-    padding:1.5rem 2rem;/*vertical & horizontal*/ 
+    padding:1.5rem 4vw;/*vertical & horizontal*/ 
+    width:0;
 }
 .input-group .btn{
     margin:1px;
+    padding:0 4vw;
 }
 /******** Input Style with button Ends Here *********/
 
@@ -342,13 +344,10 @@ color:#fff;
 /******** Plan Style with card, badge, list and buttons Begins Here *********/
 /****************************************************************************/
 
-.plane__name{
-    font-size: 500;
-    font-weight: 2.4rem;
-    /*color:#fff; with weightage 10 it did not work so increased the weightage to 20 by nesting it*/
-}
-.plan .plan__name{
-    color:#fff;
+.plan__name{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color:#fff; 
 }
 
 .plan__price{
@@ -369,6 +368,7 @@ font-size:2rem;
 font-weight: 300;
 letter-spacing: 1px;
 }
+
 .card__body .list__item{
 margin-bottom: 2rem;
 letter-spacing: 1px;
@@ -392,7 +392,7 @@ letter-spacing: 1px;
 /*****************/
 /*laptop Version*/
 /****************/
-@media screen and (min-width:1024px)
+@media screen and (min-width:768px)
 {
     .plan__name{
         font-size:1.4rem;
@@ -801,7 +801,7 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 /******************************************************/
 .feature{
     margin: 12rem 0;
-    gap:4rem 4nthrem;
+    gap:4rem 4rem;
 }
 .feature__heading{
     margin:1rem 0;
@@ -831,7 +831,7 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 @media screen and (min-width:768px) {
     .block__show-case .grid{
         grid-template-columns: 50% 50%;
-        
+        gap:4rem;
     }
     
     .show-case__image{
@@ -885,6 +885,7 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
     .footer__brand{
         order:-1;/*will reorder the last element and bring it to 1st*/
         margin-top:2rem;
+        width:150px;
     }
     .footer__header{
         font-size: 1.6rem;
