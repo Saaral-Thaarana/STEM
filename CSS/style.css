@@ -846,3 +846,63 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
 
 }
 /********* Showcase block section Ends Here ****************/
+/*************************************************************/
+/********* Footer block section Begins Here ******************/
+/*************************************************************/
+.footer{
+    background-color: #232323;
+}
+.footer__header{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer__section{
+    padding:2rem;
+    border-bottom: 1px solid #393939;
+}
+.footer__brand{
+    text-align: center;
+    margin-top: 5rem;
+}
+.footer__copywright{
+    opacity: 0.5;
+}
+.footer a{
+    color:#777;
+    transition: color 0.3s;
+}
+.footer a:hover{
+    color:#fff;
+}
+@media screen and (min-width:768px){
+    .footer__grid{
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    }
+    .footer .collapsible--chevron{
+        display:none;
+    }
+    .footer__brand{
+        order:-1;/*will reorder the last element and bring it to 1st*/
+        margin-top:2rem;
+    }
+    .footer__header{
+        font-size: 1.6rem;
+        
+    }
+    .footer__section{
+        border: 0;
+        
+    }
+    .footer__section .list{
+        margin:0;
+    }
+    .footer .collapsible__content{
+        max-height: 100%;/*maxheight & Opacity sets the content without shrinking*/
+        opacity:1;
+    }
+   .footer__section img{
+    width:100%;
+   }
+}
+/********* Footer block section Ends Here ******************/
