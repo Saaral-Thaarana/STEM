@@ -656,11 +656,11 @@ padding-bottom: calc(var(--vertical-padding) + 4rem);/*Using calc function to dy
     width:100%;
     margin:0;
 }
-.nav__list>a{
+.nav a{
     color:#b2b0db;
     transition: color 0.3s;
 }
-.nav__list>a:hover{
+.nav a:hover{
     color:#fff;
     
 }
